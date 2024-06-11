@@ -43,8 +43,8 @@ session_start();
             </div>
             <div class="flex-grow block w-full lg:flex lg:items-center lg:w-auto">
                 <div class="text-sm lg:flex-grow">
-                    <a href="public/index.php" class="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-gray-800">Home</a>
-                    <a href="../pages/recipes.php" class="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-gray-800">Recipes</a>
+                    <a href="index.php" class="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-gray-800">Home</a>
+                    <a href="../pages/contacs.php" class="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-gray-800">Contacs</a>
                     <a href="../pages/about.php" class="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-gray-800">About Us</a>
                 </div>
             </div>
