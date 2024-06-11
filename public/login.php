@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="../src/output.css">
 </head>
 
-<body class=" h-screen w-screen flex justify-center items-center font-poppins bg-orange-300">
+<body class=" h-screen w-screen flex justify-center items-center font-poppins bg-white">
 
-    <div class="w-[420px] h-[601px] bg-white flex items-center flex-col justify-around relative rounded-lg shadow-lg">
+    <div class="w-[420px] h-[601px] bg-gray-800 flex items-center flex-col justify-around relative rounded-lg shadow-lg">
         <!-- Container Header -->
         <div class="w-auto h-auto flex flex-col items-center">
-            <h1 class="text-black text-[24px] font-bold tracking-wide">
+            <h1 class="text-white text-[24px] font-bold tracking-wide">
                 WELCOME
             </h1>
 
@@ -41,7 +41,7 @@
 
         </div>
         <!-- Container Footer -->
-        <h1 class="text-sm">Dont have an account? <a class="text-blue-500" href="register.php">Register Here</a></h1>
+        <h1 class="text-sm text-gray-400">Dont have an account? <a class="text-blue-500" href="register.php">Register Here</a></h1>
 
     </div>
 
