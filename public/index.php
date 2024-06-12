@@ -3,6 +3,7 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
+<!-- Basic -->
 
 <head>
     <meta charset="utf-8">
@@ -22,6 +23,7 @@ session_start();
     <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
 
     <!-- Tailwind CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="../src/output.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/custom.css">
@@ -29,7 +31,7 @@ session_start();
 
 <body class="bg-gray-100">
     <!-- Start header -->
-    <header class="bg-white shadow-lg">
+    <header class="bg-white shadow top-navbar">
         <nav class="container flex flex-wrap items-center justify-between p-5 mx-auto">
             <a class="flex items-center flex-shrink-0 mr-6 text-black" href="index.php">
                 <img src="../images/logo3.png" alt="Hava" class="h-10" />
@@ -42,7 +44,7 @@ session_start();
             <div class="flex-grow block w-full lg:flex lg:items-center lg:w-auto">
                 <div class="text-sm lg:flex-grow">
                     <a href="index.php" class="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-gray-800">Home</a>
-                    <a href="../pages/contacs.php" class="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-gray-800">Contacts</a>
+                    <a href="../pages/contacs.php" class="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-gray-800">Contacs</a>
                     <a href="../pages/about.php" class="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-gray-800">About Us</a>
                     <button onclick="#" class="px-4 py-2 text-white bg-gray-800 rounded hover:bg-gray-900">Logout</button>
                 </div>
@@ -59,22 +61,22 @@ session_start();
             </div>
             <div class="flex flex-wrap -mx-4">
                 <div class="w-full px-4 mb-8 md:w-1/3 md:mb-0">
-                    <div class="p-6 text-center bg-white rounded-lg shadow-lg">
-                        <img src="../images/service/recipes.png" alt="Recipes" class="w-24 h-24 mx-auto mb-4" />
+                    <div class="p-6 text-center bg-white rounded-lg shadow">
+                        <img src="../images/service/recipes.png" alt="Recipes" class="mx-auto mb-4" />
                         <h3 class="mb-3 text-xl font-semibold text-gray-700">Resep disusun dengan baik</h3>
                         <p class="text-justify text-gray-600" style="text-indent: 20px;">Di Website ini semua resep makanan disusun dengan baik dan rapi layaknya buku panduan. Selain itu bahasa yang digunakan mudah dimengerti dan mudah dipahami ketika memasak menggunakan resep pada website ini.</p>
                     </div>
                 </div>
                 <div class="w-full px-4 mb-8 md:w-1/3 md:mb-0">
-                    <div class="p-6 text-center bg-white rounded-lg shadow-lg">
-                        <img src="../images/service/food.png" alt="Food" class="w-24 h-24 mx-auto mb-4" />
+                    <div class="p-6 text-center bg-white rounded-lg shadow">
+                        <img src="../images/service/food.png" alt="Food" class="mx-auto mb-4" />
                         <h3 class="mb-3 text-xl font-semibold text-gray-700">Makanan Sehat</h3>
                         <p class="text-justify text-gray-600" style="text-indent: 20px;">Semua Resep makanan yang disajikan pada website ini adalah makanan sehat yang mengaju pada pedoman "4 sehat 5 sempurna" sehingga menjaga kebugaran tubuh anda dan membuat anda dapat menerapkan hidup sehat</p>
                     </div>
                 </div>
                 <div class="w-full px-4 md:w-1/3">
-                    <div class="p-6 text-center bg-white rounded-lg shadow-lg">
-                        <img src="../images/service/kokky.png" alt="Kokky" class="w-24 h-24 mx-auto mb-4">
+                    <div class="p-6 text-center bg-white rounded-lg shadow">
+                        <img src="../images/service/kokky.png" alt="Kokky" class="mx-auto mb-4">
                         <h3 class="mb-3 text-xl font-semibold text-gray-700">Resep dari Koki handal</h3>
                         <p class="text-justify text-gray-600" style="text-indent: 20px;">Resep masakan pada website ini dibuat oleh Koki handal dan berpengalaman dalam membuat makanan sehingga pastinya jika anda membuat makanan mengikuti resep pada website ini dijamin terasa enak</p>
                     </div>
@@ -102,7 +104,7 @@ session_start();
 
         <div class="flex flex-wrap -mx-4">
             <div class="w-full px-4 mb-8 md:w-1/4 md:mb-0">
-                <div class="p-6 text-center bg-red-400 rounded-lg shadow-lg">
+                <div class="p-6 text-center bg-red-400 rounded-lg shadow">
                     <a href="#v-pills-home" class="text-white hover:text-gray-200">All Menu</a>
                 </div>
             </div>
@@ -124,7 +126,7 @@ session_start();
                         while($row = $result->fetch_assoc()) {
                             ?>
                             <div class="w-full px-4 mb-8 sm:w-1/2 md:w-1/3">
-                                <div class="p-6 text-center bg-white rounded-lg shadow-lg menu-item">
+                                <div class="p-6 text-center bg-white rounded-lg shadow menu-item">
                                     <a href="../resep.php?id=<?php echo $row['id']; ?>">
                                         <img src="../<?php echo $row['image_url']; ?>" alt="<?php echo $row['name']; ?>" class="object-cover w-24 h-24 mx-auto mb-4 rounded-full">
                                         <h4 class="mb-2 text-xl font-semibold text-gray-700"><?php echo $row['name']; ?></h4>
