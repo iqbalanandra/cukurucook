@@ -46,6 +46,7 @@ session_start();
                     <a href="index.php" class="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-gray-800">Home</a>
                     <a href="../pages/contacs.php" class="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-gray-800">Contacs</a>
                     <a href="../pages/about.php" class="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-gray-800">About Us</a>
+                    <!-- Tombol Logout -->
                     <form action="../controller/logout.php" method="post" style="display: inline;">
                         <button type="submit" class="px-4 py-2 text-white bg-gray-800 rounded hover:bg-gray-900">Logout</button>
                     </form>

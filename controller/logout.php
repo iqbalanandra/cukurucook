@@ -1,14 +1,24 @@
 <?php
-// Start the session
 session_start();
 
-// Unset all of the session variables
-$_SESSION = array();
+include 'koneksi.php';
 
-// Destroy the session.
+// Dapatkan username dari sesi
+$username = $_SESSION['username'];
+
+// Update status pengguna menjadi offline
+if ($username) {
+    $stmt = $koneksi->prepare("UPDATE users SET status='offline' WHERE username=?");
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $stmt->close();
+}
+
+// Hapus semua sesi
+session_unset();
 session_destroy();
 
-// Redirect to login page
-header("Location: cek_login.php");
-exit;
+// Redirect ke halaman login
+header("location:../public/login.php");
+exit();
 ?>
