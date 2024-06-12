@@ -34,7 +34,7 @@
                     <input class="w-full pl-10 pr-4 py-2 rounded bg-gray-300 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" type="password" name="password" placeholder="Password">
                 </div>
 
-                <button type="submit" class="w-72 relative bg-red-500 pl-10 pr-4 py-2 rounded font-semibold text-white">
+                <button type="submit" class="w-72 relative bg-red-500 pl-15 pr-4 py-2 rounded font-semibold text-white">
                     Login
                 </button>
             </form>
